@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#21132f">
+<meta name="description" content="A little birthday world made with love for Samri.">
+<title>For Samri 💗</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="sparkles" aria-hidden="true">✦　♡　✧　✦　♡　✧　✦</div>
+<header class="topbar"><span>MADE WITH LOVE</span><span>Oli ♡ Samri</span></header>
+
+<main>
+<section class="hero panel" id="welcome">
+  <p class="eyebrow">A LITTLE SOMETHING FOR YOU</p>
+  <div class="postcard-ribbon samri-ribbon" aria-label="Samri love postcards"><figure class="mini-postcard tilt-left"><img src="photos/birthday-girl/samri1.jpg" alt="Samri, beautiful as always"><figcaption>my favorite smile ♡</figcaption></figure><figure class="mini-postcard tilt-right"><img src="photos/birthday-girl/samri2.jpg" alt="Samri smiling"><figcaption>my beautiful Samri</figcaption></figure><figure class="mini-postcard tilt-left"><img src="photos/birthday-girl/samri3.jpg" alt="Samri, so loved"><figcaption>forever lovely ♡</figcaption></figure></div><div class="hero-cake-photo"><img src="photos/samri-birthday-cake.png" alt="A beautiful pink birthday cake with a glowing candle"></div><div class="gift" aria-hidden="true">🎁</div>
+  <h1>Someone special has<br><em>prepared something</em><br>for you...</h1>
+  <p class="muted">A tiny world of memories, wishes, and love.</p>
+  <button class="primary" id="openGift">Open Your Gift ✨</button>
+  <p class="tiny">Made especially for Samri, with love from Oli.</p>
+</section>
+
+<section class="panel birthday hidden" id="birthday">
+  <p class="eyebrow">TODAY IS ALL ABOUT YOU</p>
+  <h1>Happy Birthday,<br><em>Samri!</em> 💗</h1>
+  <p class="lead">You make ordinary moments feel special.</p><div class="birthday-postcards samri-birthday-postcards"><figure class="mini-postcard"><img src="photos/birthday-girl/samri4.jpg" alt="Samri, loved beyond words"><figcaption>my favorite person ♡</figcaption></figure><figure class="mini-postcard tilt-right"><img src="photos/birthday-girl/samri5.jpg" alt="Samri, shining"><figcaption>you make life brighter</figcaption></figure><figure class="mini-postcard tilt-left"><img src="photos/birthday-girl/samri6.jpg" alt="Samri, my love"><figcaption>my forever birthday girl</figcaption></figure><figure class="mini-postcard tilt-right"><img src="photos/birthday-girl/samri7.jpg" alt="Samri, always beautiful"><figcaption>beautiful inside and out ♡</figcaption></figure></div>
+  <div class="cake-wrap"><div class="cake" aria-label="Birthday cake"><div class="candle"><i></i></div><div class="icing"></div><div class="cake-top"></div><div class="cake-bottom"></div></div></div>
+  <p class="song-note">A little birthday song just for you, my Samri. 🎶</p><audio id="birthdaySong" preload="metadata" src="music/Happy_Birthday.m4a"></audio><button class="primary" id="songToggle">🎵 Play Samri’s Birthday Song</button><p class="count-label">COUNTING DOWN TO YOUR DAY</p>
+  <div class="countdown" id="countdown" aria-live="polite">
+    <div><strong id="days">--</strong><span>days</span></div>
+    <div><strong id="hours">--</strong><span>hours</span></div>
+    <div><strong id="minutes">--</strong><span>minutes</span></div>
+    <div><strong id="seconds">--</strong><span>seconds</span></div>
+  </div>
+  <div class="actions">
+    <button class="primary" id="discover">Discover Your Gifts 🎁</button>
+  </div>
+  <p class="tiny">Your little gifts are waiting. Press “Discover Your Gifts” when you are ready. 💗</p>
+</section>
+
+<section class="panel hidden" id="surprises">
+  <div class="gift-rain" id="giftRain" aria-hidden="true"></div>
+  <p class="eyebrow">OPEN THESE WHENEVER YOU LIKE</p>
+  <h2>Your little surprise journey</h2>
+  <div class="surprise-grid">
+    <button class="surprise" data-modal="letter"><span>💌</span><b>A Letter From the Heart</b><small>Words I want you to keep</small></button>
+    <button class="surprise" data-modal="memories"><span>📸</span><b>Our Story & Little Memories</b><small>Our journey together, in order</small></button>
+    <button class="surprise" data-modal="reasons"><span>💗</span><b>Reasons You Are Special</b><small>Ten little reasons and more</small></button>
+    <button class="surprise" data-modal="wishes"><span>🎂</span><b>Birthday Wishes</b><small>Tap the candle, close your eyes, make a wish</small></button>
+    <button class="surprise" data-modal="secret"><span>🔐</span><b>A Hidden Message</b><small>Tap to discover a secret</small></button>
+    <button class="surprise wide" data-modal="final"><span>🎁</span><b>The Final Gift</b><small>Sweet treats, flowers, cake and one last message from me to you</small></button>
+  </div>
+</section>
+<footer>For Samri, always. <span>♡</span></footer>
+</main>
+
+<div id="modal" class="modal-overlay hidden" role="dialog" aria-modal="true" aria-label="Birthday surprise">
+  <div class="modal-panel">
+    <button class="close" id="closeModal" aria-label="Close">×</button>
+    <div id="modalContent"></div>
+  </div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
